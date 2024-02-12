@@ -9,3 +9,7 @@ class SchoolList(ListView):
     context_object_name='schools'
     ordering=['sname']
     #template_name='app/school_list.html'
+
+class SchoolDetail(DetailView):
+    model=School
+    context_object_name='sclobject'
